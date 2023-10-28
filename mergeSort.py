@@ -1,4 +1,4 @@
-def quickSort(array):
+def mergeSort(array):
     if len(array) == 1:
         return
 
@@ -7,8 +7,8 @@ def quickSort(array):
     left = array[:mid]
     right = array[mid:]
 
-    quickSort(left)
-    quickSort(right)
+    mergeSort(left)
+    mergeSort(right)
 
     i = j = k = 0
 
@@ -40,5 +40,5 @@ def printArray(array):
 if __name__ == "__main__":
     array = [2,4,0,1,5,3]
     # printArray(array)
-    quickSort(array)
+    mergeSort(array)
     printArray(array)

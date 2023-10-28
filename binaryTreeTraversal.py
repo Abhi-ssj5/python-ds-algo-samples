@@ -52,6 +52,11 @@ def levelOrderTraversal(root):
             if currentNode.right is not None:
                 queue.append(currentNode.right)
 
+"""     1
+     /    \
+    2      3
+   / \      \
+  4   5      6 """
 
 if __name__ == "__main__":
     array = [1,2,4,-1,-1,5,-1,-1,3,-1,6,-1,-1]
